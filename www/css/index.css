@@ -1,0 +1,80 @@
+html {
+  height: 100%;
+}
+
+body {
+  background-color: black;
+  height: 100%;
+}
+
+button {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #404040;
+  border-radius: 50px;
+  background-color: #101010;
+  color: #ffffff;
+}
+
+hr {
+  margin: 0;
+  height: 5vh;
+}
+
+#button-display, .col, .container-fluid {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.row {
+  padding: 0;
+  margin: 0;
+  height: 10vh;
+  padding-bottom: 2px;
+}
+
+.col {
+  height: 100%;
+  padding-right: 1px;
+  padding-left: 1px;
+}
+
+#phone-display, #desktop-display {
+  color: white;
+  background-color: #252525;
+  height: 20vh;
+  display: inherit;
+  margin-bottom: 5px;
+}
+
+#phone-display h3 {
+  font-size: 6vh;
+}
+
+#desktop-display {
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .row {
+    height: 13vh;
+  }
+  
+  #button-display {
+    padding-top: 10vh;
+    height: 100vh;
+  }
+  
+  #phone-display {
+    display: none;
+  }
+  
+  #desktop-display {
+    overflow-y: hidden;
+    height: 100vh;
+    padding: 20px;
+    margin: 0;
+    display: inherit;
+  }
+}
